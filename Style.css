@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dff6ff;
+    text-align: center;
+}
+
+.jogo {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #006994;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 15px;
+}
+
+#oceano {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(#36c5f0, #0077b6);
+    border: 5px solid #005f8f;
+}
+
+#jogador {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.lixo,
+.animal {
+    position: absolute;
+    font-size: 40px;
+}
+
+.lixo1 {
+    left: 200px;
+    top: 150px;
+}
+
+.lixo2 {
+    left: 500px;
+    top: 300px;
+}
+
+.lixo3 {
+    left: 650px;
+    top: 100px;
+}
+
+.animal1 {
+    left: 350px;
+    top: 100px;
+}
+
+.animal2 {
+    left: 550px;
+    top: 400px;
+}
+
+.instrucoes {
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #0077b6;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f8f;
+}
