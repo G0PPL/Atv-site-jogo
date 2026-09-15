@@ -1,7 +1,7 @@
 let jogador = document.getElementById("jogador");
 
 let pontos = 0;
-let vidas = 3;
+let vidas = 2;
 
 let posicaoX = 50;
 let posicaoY = 50;
