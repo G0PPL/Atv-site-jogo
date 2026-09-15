@@ -67,7 +67,7 @@ function verificarColisoes() {
             if (vidas <= 0) {
 
                 alert("😢 Game Over! Os animais precisam da sua ajuda!");
-
+                reiniciarJogo();
             }
         }
     });
