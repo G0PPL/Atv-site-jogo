@@ -32,6 +32,11 @@ document.addEventListener("keydown", function(event) {
     jogador.style.top = posicaoY + "px";
 
     verificarColisoes();
+    vitoria();
+
+    if (event.key === "r") {
+        reiniciarJogo();
+    }
 });
 
 
@@ -73,6 +78,12 @@ function verificarColisoes() {
     });
 }
 
+function vitoria() {
+    if (pontos == 60) {
+        alert("Parabéns, você coletou todos os lixos e salvou os animais!!! 🌟✨");
+        reiniciarJogo();
+    }
+}
 
 function colidiu(objeto1, objeto2) {
 
