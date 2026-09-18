@@ -3,7 +3,7 @@ let jogador = document.getElementById("jogador");
 
 // Variáveis para controlar pontos e vidas
 let pontos = 0;
-let vidas = 3;
+let vidas = 2;
 
 // Variáveis para controlar a posição do jogador medido em px
 let posicaoX = 50;
@@ -38,6 +38,11 @@ document.addEventListener("keydown", function(event) {
     jogador.style.top = posicaoY + "px";
 
     verificarColisoes();
+    vitoria();
+
+    if (event.key === "r") {
+        reiniciarJogo();
+    }
 });
 
 
@@ -79,6 +84,12 @@ function verificarColisoes() {
     });
 }
 
+function vitoria() {
+    if (pontos == 60) {
+        alert("Parabéns, você coletou todos os lixos e salvou os animais!!! 🌟✨");
+        reiniciarJogo();
+    }
+}
 
 function colidiu(objeto1, objeto2) {
 

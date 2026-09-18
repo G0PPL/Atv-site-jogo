@@ -47,31 +47,71 @@ h1 {
 .animal {
     position: absolute;
     font-size: 40px;
-}
-
+} 
+/* Lixeira */
 .lixo1 {
-    left: 200px;
-    top: 150px;
+    left: 330px;
+    top: 100px;
 }
-
+/* Copo */
 .lixo2 {
-    left: 500px;
-    top: 300px;
+    left: 300px;
+    top: 250px;
 }
-
+/* Sacola */
 .lixo3 {
-    left: 650px;
-    top: 100px;
-}
-
-.animal1 {
-    left: 350px;
-    top: 100px;
-}
-
-.animal2 {
     left: 550px;
+    top: 100px;
+}
+/* Vassoura */
+.lixo4 {
+    left: 600px;
     top: 400px;
+}
+/* Bota */
+.lixo5 {
+    left: 30px;
+    top: 330px;
+}
+/* Jornal */
+.lixo6 {
+    left: 700px;
+    top: 30px;
+}
+/* Peixe Laranja */
+.animal1 {
+    left: 200px;
+    top: 70px;
+}
+/* Jabuti */
+.animal2 {
+    left: 400px;
+    top: 400px;
+}
+/* Baiacu */
+.animal3 {
+    left: 190px;
+    top: 400px;
+}
+/* Polvo */
+.animal4 {
+    left: 500px;
+    top: 250px;
+}
+/* Baleia */
+.animal5 {
+    left: 130px;
+    top: 230px;
+}
+/* Tubarão */
+.animal6 {
+    left: 450px;
+    top: 40px;
+}
+/* Golfinho dsgçd */
+.animal7 {
+    left: 700px;
+    top: 250px;
 }
 
 .instrucoes {
