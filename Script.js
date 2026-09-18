@@ -1,11 +1,16 @@
+//Pegando o elemento do jogador e atrbuindo a variavel jogador
 let jogador = document.getElementById("jogador");
 
+// Variáveis para controlar pontos e vidas
 let pontos = 0;
 let vidas = 3;
 
+// Variáveis para controlar a posição do jogador medido em px
 let posicaoX = 50;
 let posicaoY = 50;
 
+// Atualiza a posição inicial do jogador usando um addEveventListener
+// O evento "keydown" é disparado quando uma tecla é pressionada
 document.addEventListener("keydown", function(event) {
 
     if (event.key === "ArrowUp") {
@@ -24,10 +29,11 @@ document.addEventListener("keydown", function(event) {
         posicaoX += 20;
     }
 
-    // Impede o jogador de sair da tela
+    // impedir que o jogador saia da tela, limitando a posição do jogador
     posicaoX = Math.max(0, Math.min(posicaoX, 740));
     posicaoY = Math.max(0, Math.min(posicaoY, 440));
 
+    //
     jogador.style.left = posicaoX + "px";
     jogador.style.top = posicaoY + "px";
 
